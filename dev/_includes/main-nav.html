@@ -1,0 +1,10 @@
+<nav class="menu push-menu-right">
+    <ul>
+        <li><a class="close-menu">Close &rarr;</a></li>
+        {% for post in site.posts %}
+            <li>
+              <a href="{{ post.url }}">{{ post.title }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+</nav>

@@ -1,0 +1,28 @@
+---
+layout: base
+pattern-stylesheet: true
+---
+
+<div class="post__main" role="main">
+	 <a class="nav-toggler toggle-push-left column column__12-of-12 column__12-of-12--small column__6-of-12--medium column__6-of-12--large">About</a>
+    <a class="nav-toggler toggle-push-right column column__12-of-12 column__12-of-12--small column__6-of-12--medium column__6-of-12--large">Posts</a>
+	<header class="post__header" style="background-image: url({{ page.image }});">
+		<div class="wrapper">
+        	<h1 class="post__title">{{ page.title }}</h1>
+	       	<time class="post__title">{{ page.date | date: '%B %d, %Y' }}</time>
+        </div>
+	</header>
+    <article class="wrapper">
+        <section class="post__content">
+        	{{ content }}
+        </section>
+        <footer>
+		  {% if page.previous.url %} 
+		    <a class="post-prev" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a> 
+		  {% endif %} 
+		  {% if page.next.url %} 
+		    <a class="post-next" href="{{page.next.url}}">{{page.next.title}} &raquo;</a> 
+		  {% endif %} 
+        </footer>
+    </article>
+</div>

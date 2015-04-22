@@ -1,0 +1,34 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    color: $color__black;
+    background-color: $color__white;
+    height: 100%;
+}
+
+html,
+body{
+    width: 100%;
+    height: 100%;
+    opacity:0;  /* make things invisible upon start */
+    animation:fadeIn ease-in 1;
+    animation-fill-mode:forwards;
+    animation-duration: 0.5s;
+}
+
+%wrapper{
+    max-width: map-get($breakpoints, large);
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 $ratio#{em};
+}
+
+.wrapper{
+    @extend %wrapper;
+}
+
+.hide{
+    display: none;
+}

@@ -1,0 +1,32 @@
+a{
+    color: $color__blue;
+    fill: $color__blue;
+    cursor: pointer;
+    text-decoration: none;
+
+
+    &:hover,
+    &:focus{
+        color: $color__black;
+        fill: $color__black;
+        outline: none;
+    }
+
+    &:visited{
+        text-decoration: line-through;
+    }
+
+    &:active{
+        color: $color__black;
+        fill: $color__black;
+    }
+
+    &:disabled,
+    &[disabled],
+    &.disabled{
+        color: $color__gray;
+        fill: $color__gray;
+        opacity: $ratio--inv;
+        cursor: not-allowed;
+    }
+}

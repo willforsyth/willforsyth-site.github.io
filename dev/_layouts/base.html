@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="initial-scale=1">
+    <meta name="keywords" content="">
+
+    <title>{% if page.title %}{{ page.title }}{% endif %}</title>
+
+    <link rel="stylesheet" media="all" href="/css/screen.css">
+    <link rel="stylesheet" media="all" href="/css/patterns.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,900,400italic,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- build:js /scripts/vendor/modernizr.js -->
+        <script src="/../bower_components/modernizr/modernizr.js"></script>
+    <!-- /build -->
+</head>
+<body>
+    {% include main-nav.html %}
+    {{ content }}
+    {% include footer.html %}
+    <!-- build:js /scripts/main.js -->
+        <script data-main="/scripts/main.js" src="/../bower_components/requirejs/require.js"></script>
+    <!-- /build -->
+    <!-- build:js /resources/scripts/vendor/svg4everybody.js -->
+        <script src="/../bower_components/svg4everybody/svg4everybody.js"></script>
+    <!-- /build -->
+</body>
+</html>
