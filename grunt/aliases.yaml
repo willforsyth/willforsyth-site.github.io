@@ -13,7 +13,6 @@ build:
  - 'svgstore'
  - 'jekyll:dist'
  - 'sass:dist'
- - 'gh-pages'
  - 'autoprefixer:dist'
  - 'requirejs'
  - 'modernizr'
