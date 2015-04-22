@@ -24,7 +24,7 @@ title: Home page
     </aside>
 	<ul class="posts grid">
         {% for post in site.posts %}
-            <li id="post__{{ post.title | slugify }}" class="post__intro column column__12-of-12 column__12-of-12--small column__6-of-12--medium column__6-of-12--large">
+            <li id="post__{{ post.title | slugify }}" class="post__intro column column__12-of-12 column__12-of-12--small column__6-of-12--medium column__4-of-12--large">
                 <a href="{{ post.url }}" class="posts__more">
                     <div class="posts__inner">
                             <h3>{{ post.title }}</h3>
