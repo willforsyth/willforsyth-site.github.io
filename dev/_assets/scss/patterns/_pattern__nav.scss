@@ -38,7 +38,7 @@
             columns: 2;
         }
         @include breakpoint(medium){
-            columns: 1;
+            columns: initial;
         }
     }
 

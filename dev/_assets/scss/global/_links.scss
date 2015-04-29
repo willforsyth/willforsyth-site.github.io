@@ -2,14 +2,13 @@ a{
     color: $color__blue;
     fill: $color__blue;
     cursor: pointer;
-    text-decoration: none;
+    text-decoration: underline;
 
 
     &:hover,
     &:focus{
-        color: $color__black;
-        fill: $color__black;
         outline: none;
+        text-decoration: none;
     }
 
     &:visited{

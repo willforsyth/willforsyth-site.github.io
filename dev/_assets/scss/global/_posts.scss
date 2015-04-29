@@ -20,10 +20,12 @@
     transition: all .2s ease-in-out;
     display: block;
     z-index: 0;
+    text-decoration: none;
     &:hover{
-        transform: scale(1.5); 
+        transform: scale(1.2); 
         box-shadow: 5px 5px 41px #888888;
         z-index: 1;
+        background-color: $color__white;
     }
 }
 
@@ -40,14 +42,6 @@
 .time {
     font-style: italic;
 }
-.posts-prev, .post-next,
-.post-prev:visited, .post-next:visited {
-    color: $color__gray; 
-}
-
-.post-prev:hover, .post-next:hover {
-    text-decoration: underline;
-}
 
 .post-prev {
     float: left;
@@ -60,20 +54,3 @@
 .post__intro {
     height: 12em;
 }
-
-// #post__the-greatest-solutions-are-the-simplest { 
-//     width: 100%;
-//     background: #FFF;
-//     h3, a { 
-//         text-align: center; 
-//         color: $color__black; 
-//         font-size: 45px; 
-//         font-weight: 300;
-//     }
-//     time, p { display: none; } 
-
-//     .posts__inner { 
-//         padding:  $ratio#{em}; 
-//     }   
-
-// }

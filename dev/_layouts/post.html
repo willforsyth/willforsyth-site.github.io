@@ -2,11 +2,11 @@
 layout: base
 pattern-stylesheet: true
 ---
-
-<div class="post__main" role="main">
-	 <a class="nav-toggler toggle-push-left column column__12-of-12 column__12-of-12--small column__6-of-12--medium column__6-of-12--large">About</a>
-    <a class="nav-toggler toggle-push-right column column__12-of-12 column__12-of-12--small column__6-of-12--medium column__6-of-12--large">Posts</a>
-	<header class="post__header" style="background-image: url({{ page.image }});">
+<header>
+    <a class="nav-toggler toggle-push-right">Menu</a>
+</header>
+<section class="post__main" role="main">
+	<header class="post__header">
 		<div class="wrapper">
         	<h1 class="post__title">{{ page.title }}</h1>
 	       	<time class="post__title">{{ page.date | date: '%B %d, %Y' }}</time>
@@ -25,4 +25,4 @@ pattern-stylesheet: true
 		  {% endif %} 
         </footer>
     </article>
-</div>
+</section>

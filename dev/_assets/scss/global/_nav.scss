@@ -11,12 +11,11 @@
     padding: 0;
 }
 .menu li {
-    border-bottom: 1px solid $color__white;
     padding: $ratio--inv#{em};
 }
 
 .menu a {
-    color: $color__white;
+    color: $color__blue;
     display: inline-block;
     height: 100%;
     transition: all 0.3s;
@@ -70,6 +69,12 @@
 .push-menu-right {
      background-color: $color__black;
     color: $color__white;
+}
+
+.nav-toggler {
+    position: absolute;
+    right: 2em;
+    top: 2em
 }
 
 // .toggle-push-right:hover {
