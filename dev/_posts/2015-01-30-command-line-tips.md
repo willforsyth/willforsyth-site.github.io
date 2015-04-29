@@ -22,3 +22,8 @@ Copy your SSH key.
 	cat ~ /.ssh/id_rsa.pub | pbcopy
 {% endhighlight %}
 
+Cop and zip up a directory
+{% highlight html %}
+	git archive master --format=zip web > web-archive.zip
+{%endhighlight%}
+
