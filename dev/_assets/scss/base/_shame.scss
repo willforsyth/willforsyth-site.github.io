@@ -1,1 +1,15 @@
 // Don't leave stuff in here, it's lazy and everyone will hate you for it.
+
+.header{
+	background: $color__black;
+	color:  $color__white;
+	padding: 43px;
+}
+
+.logo {
+	display: inline-block;
+}
+
+.logo__strap {
+	display: inline;
+}

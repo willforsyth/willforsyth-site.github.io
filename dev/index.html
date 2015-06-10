@@ -6,11 +6,8 @@ title: Home page
 {% assign posts = site.posts | sort: 'group' %}
 
 <main class="post__main">
-    <header>
+    <aside>
         <a class="nav-toggler toggle-push-right">Menu</a>
-    </header>
-    <aside class="column column__12-of-12 posts__inner">
-        <h1>The greatest ideas are the simplest</h1>
     </aside>
 	<ul class="posts grid">
         {% for post in site.posts %}
